@@ -1,0 +1,58 @@
+/* Footer Styling */
+.footclass {
+  text-align: center;
+  background-color: #ebebeb;
+  color: #222222;
+  padding: 10px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.my-info {
+  width: 100%;
+  text-align: center;
+}
+
+.my-info i {
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #222222;
+}
+
+.my-info i:hover {
+  color: blue;
+}
+
+.links {
+  width: 100%;
+  text-align: center;
+}
+
+.links a {
+  text-decoration: none !important;
+  color: #222222;
+}
+
+.links a:hover {
+  text-decoration: underline !important;
+  color: blue;
+}
+
+.name {
+  width: 100%;
+  text-align: center;
+}
+
+/* heart*/
+
+.heart {
+  height: 70px;
+  width: 70px;
+}
+
+.fa-heart-pulse {
+  color: red;
+}
