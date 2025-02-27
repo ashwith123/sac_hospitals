@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav">
             <a class="nav-link active" href="/">Home</a>
-            <a class="nav-link" href="/">view nearby hospitals</a>
+            <a class="nav-link" href="/"></a>
             <a class="nav-link" href="/">about diseases</a>
           </div>
           <div class="navbar-nav ms-auto">
@@ -42,22 +42,51 @@
     </nav>
     <br />
     <div class="col-7 offset-2">
-      <h1>Disease Predictor</h1>
-    </div>
-    <div class="col-7 offset-2">
-      <label for="symptoms">Enter symptoms:</label>
-      <input
-        type="text"
-        class="form-control"
-        id="symptoms"
-        placeholder="Enter symptoms"
-      />
-      <button id="submitBtn" class="btn btn-danger mt-2">Submit</button>
-    </div>
-
-    <div id="enteredSymptoms" class="col-7 offset-2 mt-3">
-      <!-- Symptoms will be displayed here -->
-    </div>
+      <div class="row mt-3">
+        <h1 class="col-6 offset-3">Sign up</h1>
+        <div class="col-6 offset-3">
+          <form action="/login" method="post">
+            <div class="mb-3">
+              <label
+                for="title"
+                class="form-label"
+                class="needs-validation"
+                novalidate
+                >username</label
+              >
+              <input
+                name="username"
+                type="text"
+                class="form-control"
+                placeholder="Add Title"
+                id="title"
+                required
+              />
+              <div class="valid-feedback">title looks good</div>
+            </div>
+    
+            <div class="mb-3">
+              <label
+                for="password"
+                class="form-label"
+                class="needs-validation"
+                novalidate
+                >Password</label
+              >
+              <input
+                name="password"
+                type="password"
+                class="form-control"
+                placeholder="Add Title"
+                id="password"
+                required
+              />
+              <div class="valid-feedback">password is strong</div>
+            </div>
+            <button class="btn btn-success" type="submit">login</button>
+          </form>
+        </div>
+      </div>
 
     <!-- fotter -->
     <footer class="footclass border-top">
